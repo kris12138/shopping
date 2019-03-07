@@ -83,6 +83,7 @@ let app=new Vue({
                 "clickUrl": "@url",
                 "img": "@image(375x180,@color)"
               }
+              
             ]
           })
 

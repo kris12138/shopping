@@ -61,9 +61,9 @@ let app=new Vue({
                   "imgs": [
                     "@image(178x178,@color)"
                   ],
-                  "originalPrice|100-999": 1,
+                  "originalPrice|101-300.2-2": 1,
                   "postage": "免运费",
-                  "price|5-99": 1,
+                  "price|1-100.2-2": 1,
                   "sales|500-800": 1,
                   "title": "@ctitle",
                   "storeName": "@ctitle",

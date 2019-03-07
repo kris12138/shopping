@@ -64,9 +64,9 @@ let app=new Vue({
                           "name": "@ctitle",
                            
                           "price|+1": [
-                            89,
-                            29,
-                            46.8
+                            89.02,
+                            29.90,
+                            46.85
                           ],
                           "recommend|+1": [
                             8844,
