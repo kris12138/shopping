@@ -29,20 +29,9 @@
   <div class="container wap-goods internal-purchase" style="min-height: 617px;">
     <div class="content no-sidebar">
       <div class="content-body">
-        <div class="custom-image-swiper custom-goods-swiper js-swp swp">
+ 
+            <swipe :lists='bannerListsImg'  v-if='bannerListsImg'></swipe>
 
-            <swipe :lists='bannerLists'  v-if='bannerLists'></swipe>
-  
-          <!-- <div class="swiper-pagination js-swiper-pagination">
-            <ul class="swp-thumbnail-list">
-              <li class="swiper-pagination-switch"></li>
-              <li class="swiper-pagination-switch"></li>
-              <li class="swiper-pagination-switch swiper-active-switch"></li>
-      
-            </ul>
-          </div> -->
-
-        </div>
         <div class="goods-header">
           <h2 class="title">{{goodsDetails.title}}</h2>
           <span class="hide js-add-wish js-wish-animate wish-add  font-size-12 tag tag-redf30 pull-right">
@@ -248,6 +237,7 @@
 
 
 </div>
+            </div>
 </body>
 
 </html>

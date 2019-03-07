@@ -1,4 +1,10 @@
 
+
+
+import { InfiniteScroll} from 'mint-ui';
+
+
+
 import "./goods_common.css"
 import "./goods_custom.css"
 import "./goods.css"
@@ -26,7 +32,8 @@ let app=new Vue({
         skuShow:false,
         cartNum:1,
         cartShow:false,
-        addCartMessage:false
+        addCartMessage:false,
+        bannerListsImg:null
     },
     created(){
         this.getDetails()
@@ -36,8 +43,19 @@ let app=new Vue({
     methods:{
         getDetails(){
 
+          let data1=Mock.mock({
+            "lists|3": [
+              {
+                "clickUrl": "@url",
+                "img":"@image(178x178,@color)"
+              }
+              
+            ]
+          })
 
+          this.bannerListsImg=data1.lists
 
+ 
             let data=Mock.mock({
                 "data": {
                   "imgs": [
